@@ -1,0 +1,23 @@
+{
+  "name": "alexmoor.es",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/admoores/alexmoor.es.git"
+  },
+  "author": "Alex Moores",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/admoores/alexmoor.es/issues"
+  },
+  "homepage": "https://github.com/admoores/alexmoor.es#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2"
+  }
+}
