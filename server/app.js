@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 });
 
 app.all('/boogiebox', (req, res) => {
-  console.log('redirecting to boogiebox');
+  console.log('redirecting to boogiebox', req.url);
   proxy.web(req, res, {target: 'http://localhost:8080'});
 });
 
