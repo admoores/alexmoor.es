@@ -6,7 +6,10 @@ const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
 const httpProxy = require('http-proxy');
+const socketProxy = require('socket.io-proxy');
+
 const proxy = httpProxy.createProxyServer();
+
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
 const ca = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/chain.pem');
@@ -30,6 +33,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
+
+socketProxy.init('http://localhost:8080');
+socketProxy.connect('https://alexmoor.es/boogiebox/');
 
 app.all('/boogiebox*', (req, res) => {
   req.url = req.url.slice(10);
