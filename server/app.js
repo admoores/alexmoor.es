@@ -5,7 +5,6 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
-const proxy = require('express-http-proxy');
 // const httpProxy = require('http-proxy');
 
 // const proxy = httpProxy.createProxyServer();
@@ -29,7 +28,6 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use('/boogiebox', proxy('http://localhost:8080'));
 
 app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
