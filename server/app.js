@@ -6,7 +6,6 @@ const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
 const httpProxy = require('http-proxy');
-const socketProxy = require('socket.io-proxy');
 
 const proxy = httpProxy.createProxyServer();
 
@@ -33,9 +32,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
-
-socketProxy.init('https://alexmoor.es/boogiebox-socket/');
-socketProxy.connect('http://localhost:8080');
 
 app.all('/boogiebox*', (req, res) => {
   req.url = req.url.slice(10);
