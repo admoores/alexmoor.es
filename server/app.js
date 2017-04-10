@@ -21,6 +21,7 @@ httpRedirect.listen(80);
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client')));
+app.use('/boogiebox*', express.static(path.join('/var/www/boogie-box/boogie-box/')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
