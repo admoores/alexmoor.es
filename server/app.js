@@ -5,6 +5,8 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
+const httpProxy = require('http-proxy');
+const proxy = httpProxy.createProxyServer();
 
 const port = 443;
 
@@ -24,6 +26,11 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
+});
+
+app.all('/boogiebox', (req, res) => {
+  console.log('redirecting to boogiebox');
+  proxy.web(req, res, {target: 'http://localhost:8080'});
 });
 
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
