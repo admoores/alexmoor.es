@@ -29,7 +29,6 @@ app.get('/', (req, res) => {
 });
 
 app.all('/boogiebox*', (req, res) => {
-  req.url = req.url.slice(10);
   console.log('redirecting to boogiebox', req.url);
   proxy.web(req, res, {target: 'http://localhost:8080'}, (error) => {
     console.log('Error on getting external app');
