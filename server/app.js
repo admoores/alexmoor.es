@@ -33,7 +33,7 @@ app.all('/boogiebox*', (req, res) => {
   console.log('redirecting to boogiebox', req.url);
   proxy.web(req, res, {target: 'http://localhost:8080'}, (error) => {
     console.log('Error on getting external app');
-    res.send('It appears this app is down. Sorry!');
+    res.status(500).send('It appears this app is down. Sorry!');
   });
 });
 
