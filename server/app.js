@@ -5,7 +5,6 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
-const proxy = require('redbird');
 
 const port = 443;
 
@@ -22,8 +21,6 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-
-proxy.register('alexmoor.es/otherApp', 'http://127.0.0.1:8080');
 
 app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
