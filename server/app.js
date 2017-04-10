@@ -5,8 +5,8 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
-const httpProxy = require('http-proxy');
-const proxy = httpProxy.createProxyServer();
+// const httpProxy = require('http-proxy');
+// const proxy = httpProxy.createProxyServer();
 
 const port = 443;
 
@@ -28,17 +28,17 @@ app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
 
-app.all('/boogiebox*', (req, res) => {
-  req.url = req.url.slice(10);
-  if (req.url[req.url.length - 1] === '/') {
-    req.url = req.url.substring(0, req.url.length - 1);
-  }
-  console.log('redirecting to boogiebox', req.url);
-  proxy.web(req, res, {target: 'http://localhost:8080'}, (error) => {
-    console.log('Error on getting external app');
-    res.status(500).send('It appears this app is down. Sorry!');
-  });
-});
+// app.all('/boogiebox*', (req, res) => {
+//   req.url = req.url.slice(10);
+//   if (req.url[req.url.length - 1] === '/') {
+//     req.url = req.url.substring(0, req.url.length - 1);
+//   }
+//   console.log('redirecting to boogiebox', req.url);
+//   proxy.web(req, res, {target: 'http://localhost:8080'}, (error) => {
+//     console.log('Error on getting external app');
+//     res.status(500).send('It appears this app is down. Sorry!');
+//   });
+// });
 
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es//fullchain.pem');
