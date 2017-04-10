@@ -34,8 +34,8 @@ app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
 
-socketProxy.init('http://localhost:8080');
-socketProxy.connect('https://alexmoor.es/boogiebox-socket/');
+socketProxy.init('https://alexmoor.es/boogiebox-socket/');
+socketProxy.connect('http://localhost:8080');
 
 app.all('/boogiebox*', (req, res) => {
   req.url = req.url.slice(10);
