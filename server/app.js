@@ -5,7 +5,7 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
-const proxy = require('redbird')({port: 443});
+const proxy = require('redbird');
 
 const port = 443;
 
