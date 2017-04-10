@@ -12,12 +12,12 @@ const port = 443;
 
 const app = express();
 
-const httpRedirect = express();
-httpRedirect.get('*', (req, res) => {
-  res.redirect('https://alexmoor.es' + req.url);
-  console.log('HTTP request made, redirected to HTTPS');
-});
-httpRedirect.listen(80);
+// const httpRedirect = express();
+// httpRedirect.get('*', (req, res) => {
+//   res.redirect('https://alexmoor.es' + req.url);
+//   console.log('HTTP request made, redirected to HTTPS');
+// });
+// httpRedirect.listen(80);
 
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../client')));
