@@ -29,9 +29,13 @@ app.get('/', (req, res) => {
 });
 
 app.all('/boogiebox*', (req, res) => {
-  req.url = req.url.slice(10);
-  console.log('redirecting to boogiebox', req.url);
-  proxy.web(req, res, {target: 'http://localhost:8080'});
+  try {
+    req.url = req.url.slice(10);
+    console.log('redirecting to boogiebox', req.url);
+    proxy.web(req, res, {target: 'http://localhost:8080'});
+  } catch (e) {
+    res.send('It looks like this page is down');
+  }
 });
 
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
