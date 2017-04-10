@@ -28,8 +28,9 @@ app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
 
-app.all('/boogiebox', (req, res) => {
+app.all('/boogiebox/*', (req, res) => {
   console.log('redirecting to boogiebox', req.url);
+  req.url = req.url.slice(10);
   proxy.web(req, res, {target: 'http://localhost:8080'});
 });
 
