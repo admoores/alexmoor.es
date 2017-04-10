@@ -10,7 +10,7 @@ const port = 443;
 
 const app = express();
 
-const httpRedirect = express.createServer();
+const httpRedirect = express();
 httpRedirect.get('*', (req, res) => {
   res.redirect('https://alexmoor.es' + req.url);
   console.log('HTTP request made, redirected to HTTPS');
