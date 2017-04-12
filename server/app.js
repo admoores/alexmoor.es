@@ -11,7 +11,7 @@ const https = require('https');
 
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
-const ca = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/chain.pem');
+// const ca = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/chain.pem');
 
 const port = 443;
 
@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
 //   });
 // });
 
-const server = https.createServer({key: pKey, cert: cert, ca: ca}, app)
+const server = https.createServer({key: pKey, cert: cert}, app)
 
 server.listen(port, () => {
   console.log('Securely listening on port', port);
