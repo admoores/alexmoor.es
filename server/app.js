@@ -33,19 +33,19 @@ app.get('/', (req, res) => {
   res.json({string: 'this is a string'});
 });
 
-// app.all('/boogiebox*', (req, res) => {
-//   req.url = req.url.slice(10);
-//   if (req.url[req.url.length - 1] === '/') {
-//     req.url = req.url.substring(0, req.url.length - 1);
-//   }
-//   console.log('redirecting to boogiebox', req.url);
-//   proxy.web(req, res, {
-//     target: 'http://localhost:8080'
-//   }, (error) => {
-//     console.log('Error on getting external app');
-//     res.status(500).send('It appears this app is down. Sorry!');
-//   });
-// });
+app.all('/boogiebox*', (req, res) => {
+  req.url = req.url.slice(10);
+  if (req.url[req.url.length - 1] === '/') {
+    req.url = req.url.substring(0, req.url.length - 1);
+  }
+  console.log('redirecting to boogiebox', req.url);
+  proxy.web(req, res, {
+    target: 'http://localhost:8080'
+  }, (error) => {
+    console.log('Error on getting external app');
+    res.status(500).send('It appears this app is down. Sorry!');
+  });
+});
 
 const server = https.createServer({key: pKey, cert: cert}, app)
 
