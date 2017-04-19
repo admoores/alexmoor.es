@@ -13,7 +13,7 @@ const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
 // const ca = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/chain.pem');
 
-const port = 443;
+const port = 8081;
 
 const app = express();
 
