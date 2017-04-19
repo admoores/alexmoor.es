@@ -5,9 +5,9 @@ const path = require('path');
 const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
-// const httpProxy = require('http-proxy');
+const httpProxy = require('http-proxy');
 
-// const proxy = httpProxy.createProxyServer();
+const proxy = httpProxy.createProxyServer();
 
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
