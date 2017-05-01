@@ -13,13 +13,13 @@ var config = {
 
   module : {
     loaders : [
-      {
-        test: /\.js$/, loader: 'babel', exclude: /node_modules/
-      },
+      // {
+      //   test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/
+      // },
       {
         test : /\.jsx?/,
         include : APP_DIR,
-        loader : 'babel'
+        loader : 'babel-loader'
       }
     ]
   }
