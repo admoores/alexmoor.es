@@ -4,7 +4,17 @@ import {render} from 'react-dom';
 class App extends React.Component {
   render() {
     return (
-      <p>This is a test page</p>
+      <div>
+        <div className="block">
+          <p>Hello</p>
+        </div>
+        <div className="block">
+          <p>World</p>
+        </div>
+        <div className="block">
+          <p>Flexy</p>
+        </div>
+      <div>
     );
   }
 }
