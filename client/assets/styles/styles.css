@@ -2,14 +2,19 @@ body {
   background-color: #252525;
 }
 
-#app {
+/*#app {
   display: flex;
   margin: 0 auto;
   flex-direction: row;
-}
+}*/
 
 .block {
   justify-content: space-around;
   background-color: #EEEEEE;
+}
 
+.container {
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
 }

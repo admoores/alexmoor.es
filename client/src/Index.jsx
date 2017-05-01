@@ -4,16 +4,16 @@ import {render} from 'react-dom';
 class App extends React.Component {
   render() {
     return (
-      <div>
-        <span className="block">
+      <div className="container">
+        <div className="block">
           <p>Hello</p>
-        </span>
-        <span className="block">
+        </div>
+        <div className="block">
           <p>World</p>
-        </span>
-        <span className="block">
+        </div>
+        <div className="block">
           <p>Flexy</p>
-        </span>
+        </div>
       </div>
     );
   }
