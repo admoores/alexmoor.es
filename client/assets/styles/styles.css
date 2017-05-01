@@ -9,6 +9,7 @@ body {
 }*/
 
 .block {
+  display: flex;
   margin: 20px;
   justify-content: center;
   background-color: #EEEEEE;
