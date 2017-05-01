@@ -14,7 +14,7 @@ class App extends React.Component {
         <div className="block">
           <p>Flexy</p>
         </div>
-      <div>
+      </div>
     );
   }
 }
