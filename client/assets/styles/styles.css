@@ -2,21 +2,20 @@ body {
   background-color: #252525;
 }
 
-/*#app {
+#app {
   display: flex;
   margin: 0 auto;
-  flex-direction: row;
-}*/
+  justify-content: center;
+}
 
 .block {
   margin: 5px;
   background-color: #EEEEEE;
-  width: 20%;
 }
 
 .container {
   justify-content: center;
-  width: 100%;
+  max-width: 800px;
   display: flex;
   margin: 0 auto;
   flex-direction: row;
