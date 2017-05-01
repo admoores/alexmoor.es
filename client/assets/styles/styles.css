@@ -8,7 +8,7 @@ body {
 }
 
 .block {
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   background-color: #EEEEEE;
 
