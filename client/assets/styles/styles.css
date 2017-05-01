@@ -11,6 +11,7 @@ body {
 .block {
   margin: 5px;
   background-color: #EEEEEE;
+  width: 20%;
 }
 
 .container {
