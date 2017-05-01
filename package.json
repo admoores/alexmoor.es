@@ -4,7 +4,7 @@
   "description": "My personal website",
   "main": "server.js",
   "scripts": {
-    "start": "sudo nodemon server/app.js",
+    "start": "npm run build && sudo nodemon server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/webpack -d"
   },

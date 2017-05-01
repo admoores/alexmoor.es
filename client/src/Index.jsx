@@ -5,15 +5,15 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <div className="block">
+        <span className="block">
           <p>Hello</p>
-        </div>
-        <div className="block">
+        </span>
+        <span className="block">
           <p>World</p>
-        </div>
-        <div className="block">
+        </span>
+        <span className="block">
           <p>Flexy</p>
-        </div>
+        </span>
       </div>
     );
   }
