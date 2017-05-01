@@ -9,13 +9,12 @@ body {
 }*/
 
 .block {
-  display: flex;
-  margin: 20px;
-  justify-content: center;
+  margin: 5px;
   background-color: #EEEEEE;
 }
 
 .container {
+  justify-content: center;
   width: 100%;
   display: flex;
   margin: 0 auto;
