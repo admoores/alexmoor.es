@@ -5,10 +5,10 @@ body {
 #app {
   display: flex;
   margin: 0 auto;
+  flex-direction: row;
 }
 
 .block {
-  flex-direction: column;
   justify-content: space-around;
   background-color: #EEEEEE;
 
