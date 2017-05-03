@@ -10,8 +10,8 @@ class NavBar extends React.Component {
   render() {
     return (
       <div className="navBar">
-        <a href='/index.html' className="navElement">HOME</a>
-        <a href='/portfolio/index.html' className="navElement">PORTFOLIO</a>
+        <a href="/" className="navElement">HOME</a>
+        <a href="/portfolio/" className="navElement">PORTFOLIO</a>
       </div>
     );
   }
