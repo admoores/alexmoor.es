@@ -6,17 +6,9 @@ let lipsum = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pulv
 class App extends React.Component {
   render() {
     return (
-      <div className="container">
-        <div className="block">
-          <p>{lipsum}</p>
-        </div>
-        <div className="block">
-          <p>{lipsum}</p>
-        </div>
-        <div className="block">
-          <p>{lipsum}</p>
-        </div>
-      </div>
+      <div className='main'>
+        <h1>Alex Moores</h1>
+      <div>
     );
   }
 }
