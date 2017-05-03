@@ -8,13 +8,9 @@ body {
   justify-content: center;
 }
 
-.block {
-  margin: 5px;
-  background-color: #EEEEEE;
-}
-
-.container {
+.main {
   justify-content: center;
+  background-color: #EEEEEE;
   max-width: 800px;
   display: flex;
   flex-direction: row;
