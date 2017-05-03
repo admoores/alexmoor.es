@@ -8,6 +8,8 @@ class App extends React.Component {
     return (
       <div className='main'>
         <h1>Alex Moores</h1>
+
+        <p>{lipsum}</p>
       </div>
     );
   }
