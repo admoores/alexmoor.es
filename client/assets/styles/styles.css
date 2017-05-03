@@ -13,5 +13,16 @@ body {
   background-color: #EEEEEE;
   max-width: 800px;
   display: flex;
+  flex-direction: column;
+}
+
+.navBar {
+  display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.navElement {
+  color: #434343;
 }
