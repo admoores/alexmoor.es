@@ -9,7 +9,7 @@ class App extends React.Component {
     return (
       <div className='main'>
         <h1>Alex Moores</h1>
-
+        <NavBar/>
         <p>{lipsum}</p>
       </div>
     );
