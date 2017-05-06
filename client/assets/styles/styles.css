@@ -14,7 +14,7 @@ body {
   max-width: 800px;
   display: flex;
   flex-direction: column;
-  min-height: 95vh;
+  min-height: 93vh;
   padding: 15px;
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
