@@ -9,7 +9,7 @@ body {
 }
 
 .main {
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #EEEEEE;
   max-width: 800px;
   display: flex;
