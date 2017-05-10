@@ -13,7 +13,7 @@ const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
 
 const port = 8081;
 
-app.use((null, null, next) => {
+app.use((req, res, next) => {
   console.log('Request at:', new Date().JSON());
 });
 app.use(morgan('dev'));
