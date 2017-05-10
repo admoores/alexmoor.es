@@ -11,7 +11,7 @@ body {
 .main {
   justify-content: flex-start;
   background-color: #EEEEEE;
-  max-width: 800px;
+  max-width: 900px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
