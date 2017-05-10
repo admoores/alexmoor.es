@@ -16,7 +16,7 @@ const port = 8081;
 const app = express();
 
 app.use((req, res, next) => {
-  console.log('Request at:', new Date.toJSON());
+  console.log('Request at:', new Date().toJSON());
   next();
 });
 app.use(morgan('dev'));
