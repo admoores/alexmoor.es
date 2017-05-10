@@ -6,6 +6,8 @@ const morgan = require('morgan');
 const fs = require('fs');
 const https = require('https');
 
+morgan(':response-time ms');
+
 const pKey = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/privkey.pem');
 const cert = fs.readFileSync('/etc/letsencrypt/live/alexmoor.es/fullchain.pem');
 
