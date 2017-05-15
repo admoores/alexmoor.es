@@ -41,6 +41,7 @@ h1 {
 .headshot {
   width: 175px;
   margin: 10px;
+  margin-left: 25px;
 }
 
 .horizontalDivider {
