@@ -60,10 +60,9 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+  align-items: center;
 }
 .aboutPageHeaderElement {
-  height: 100%;
-  vertical-align: middle;
 }
 
 .rightAlign {
