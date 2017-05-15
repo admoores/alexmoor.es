@@ -15,7 +15,7 @@ class App extends React.Component {
         <div className='pageBody'>
           <div>
             <p> {lipsum} </p>
-          <div>
+          </div>
           <div>
             <img src="../../assets/img/headshot.jpg" className='headshot'/>
           </div>
