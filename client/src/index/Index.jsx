@@ -10,7 +10,9 @@ class App extends React.Component {
       <div className='main'>
         <h1>Alex Moores</h1>
         <NavBar/>
-        <p>{lipsum}</p>
+        <div className='pageBody'>
+          <img src="../../assets/img/headshot.jpg"/>
+        </div>
       </div>
     );
   }
