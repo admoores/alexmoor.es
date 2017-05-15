@@ -49,14 +49,18 @@ h1 {
 }
 
 .horizontalDivider {
-    margin: 10px 0;
-    height: 1px;
-    background: #171717;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(#EEEEEE), to(#EEEEEE), color-stop(50%, black));
+  margin: 10px 0;
+  height: 1px;
+  background: #171717;
+  background: -webkit-gradient(linear, 0 0, 100% 0, from(#EEEEEE), to(#EEEEEE), color-stop(50%, black));
 }
 
 .pageBody {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.rightAlign {
+  text-align: right;
 }

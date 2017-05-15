@@ -19,7 +19,7 @@ class App extends React.Component {
           <div>
             <img src="../../assets/img/headshot.jpg" className='headshot'/>
           </div>
-          <div style="text-align: right">
+          <div className='rightAlign'>
             <p>{lipsum}</p>
           </div>
         </div>
