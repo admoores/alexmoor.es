@@ -9,11 +9,11 @@ class App extends React.Component {
     return (
       <div className='main'>
         <h1>Alex Moores</h1>
-        <span className="horizontalDivider"></span>
+        <span className='horizontalDivider'></span>
         <NavBar/>
-        <span className="horizontalDivider"></span>
+        <span className='horizontalDivider'></span>
         <div className='pageBody'>
-          <img src="../../assets/img/headshot.jpg" className='headshot'/>
+          <span className='hexagon'></span>
           <span>{lipsum}</span>
         </div>
       </div>
