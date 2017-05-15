@@ -44,8 +44,8 @@ h1 {
 }
 
 .sexy_line {
-    margin: 25px 0;
+    margin: 10px 0;
     height: 1px;
     background: black;
-    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(#171717), to(#EEEEEE), color-stop(50%, black));
 }
