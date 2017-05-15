@@ -9,9 +9,9 @@ class App extends React.Component {
     return (
       <div className='main'>
         <h1>Alex Moores</h1>
-        <span className="sexy_line"></span>
+        <span className="horizontalDivider"></span>
         <NavBar/>
-        <span className="sexy_line"></span>
+        <span className="horizontalDivider"></span>
         <div className='pageBody'>
           <img src="../../assets/img/headshot.jpg" className='headshot'/>
         </div>
