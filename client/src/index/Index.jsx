@@ -12,15 +12,15 @@ class App extends React.Component {
         <span className="horizontalDivider"></span>
         <NavBar/>
         <span className="horizontalDivider"></span>
-        <div className='pageBody'>
-          <div>
-            <p> {lipsum} </p>
+        <div className='aboutPageHeader'>
+          <div className='aboutPageHeaderElement'>
+            <p> Some Text </p>
           </div>
-          <div>
+          <div className='aboutPageHeaderElement'>
             <img src="../../assets/img/headshot.jpg" className='headshot'/>
           </div>
-          <div className='rightAlign'>
-            <p>{lipsum}</p>
+          <div className='rightAlign aboutPageHeaderElement'>
+            <p> Some More Text </p>
           </div>
         </div>
       </div>
