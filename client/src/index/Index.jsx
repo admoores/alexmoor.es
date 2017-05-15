@@ -13,8 +13,15 @@ class App extends React.Component {
         <NavBar/>
         <span className="horizontalDivider"></span>
         <div className='pageBody'>
-          <img src="../../assets/img/headshot.jpg" className='headshot'/>
-          <span>{lipsum}</span>
+          <div>
+            <p> {lipsum} </p>
+          <div>
+          <div>
+            <img src="../../assets/img/headshot.jpg" className='headshot'/>
+          </div>
+          <div>
+            <p>{lipsum}</p>
+          </div>
         </div>
       </div>
     );
