@@ -5,7 +5,8 @@ body {
 }
 
 h1 {
-  align: center;
+  text-align: center;
+  width: 100$;
   font-family: "Verdana", sans-serif;
 }
 
