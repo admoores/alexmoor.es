@@ -51,5 +51,5 @@ h1 {
     color:white;
     height:1px;
     background:black;
-    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#171717), to(#EEEEEE));
+    background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 350, from(#171717), to(#DDDDDD));
 }
