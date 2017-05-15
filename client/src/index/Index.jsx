@@ -14,7 +14,7 @@ class App extends React.Component {
         <span className="horizontalDivider"></span>
         <div className='pageBody'>
           <img src="../../assets/img/headshot.jpg" className='headshot'/>
-          <span>{{lipsum}}</span>
+          <span>{lipsum}</span>
         </div>
       </div>
     );
