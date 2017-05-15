@@ -54,31 +54,3 @@ h1 {
     background: #171717;
     background: -webkit-gradient(linear, 0 0, 100% 0, from(#EEEEEE), to(#EEEEEE), color-stop(50%, black));
 }
-
-.hexagon {
-  position: relative;
-  width: 150px;
-  height: 86.60px;
-  background-image: "../../assets/img/headshot.jpg"
-  margin: 43.30px 0;
-}
-
-.hexagon:before,
-.hexagon:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-}
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 43.30px solid #64C7CC;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 43.30px solid #64C7CC;
-}
