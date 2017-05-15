@@ -11,7 +11,7 @@ class App extends React.Component {
         <h1>Alex Moores</h1>
         <NavBar/>
         <div className='pageBody'>
-          <img src="../../assets/img/headshot.jpg"/>
+          <img src="../../assets/img/headshot.jpg" className='headshot'/>
         </div>
       </div>
     );

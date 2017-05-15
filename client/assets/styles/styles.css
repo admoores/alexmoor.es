@@ -37,3 +37,8 @@ h1 {
 .navElement {
   color: #434343;
 }
+
+.headshot {
+  width: 100px;
+  margin: 10px;
+}
