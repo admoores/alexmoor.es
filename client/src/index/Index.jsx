@@ -16,7 +16,7 @@ class App extends React.Component {
           <div className='aboutPageHeaderElement'>
             <p> Some Text </p>
           </div>
-          <div className="hexagon hexagon1 aboutPageHeaderElement"><div className="hexagon-in1"><div className="hexagon-in2"></div></div></div>
+          <img src="../../assets/img/headshot.jpg"
           <div className='rightAlign aboutPageHeaderElement'>
             <p> Some More Text </p>
           </div>
