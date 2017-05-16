@@ -16,7 +16,7 @@ class App extends React.Component {
           <div className='aboutPageHeaderElement'>
             <p> Some Text </p>
           </div>
-          <img src="../../assets/img/headshot.jpg"
+          <img src="../../assets/img/headshot.jpg"/>
           <div className='rightAlign aboutPageHeaderElement'>
             <p> Some More Text </p>
           </div>
