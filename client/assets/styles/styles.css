@@ -27,6 +27,10 @@ h1 {
   padding: 15px;
 }
 
+.navBarContainer{
+  width: 100%;
+}
+
 .navBar {
   display: flex;
   flex-direction: row;

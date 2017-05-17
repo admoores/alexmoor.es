@@ -9,7 +9,7 @@ class NavBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="navBarContainer">
         <span className="horizontalDivider"></span>
         <div className="navBar">
           <a href="/" className="navElement">HOME</a>
