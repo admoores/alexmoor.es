@@ -9,9 +9,7 @@ class App extends React.Component {
     return (
       <div className='main'>
         <h1>Alex Moores</h1>
-        <span className="horizontalDivider"></span>
         <NavBar/>
-        <span className="horizontalDivider"></span>
         <div className='aboutPageHeader'>
           <div className='aboutPageHeaderElement'>
             <p> Some Text </p>
